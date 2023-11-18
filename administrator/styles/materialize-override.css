@@ -1,0 +1,50 @@
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, input[type=search]:focus, textarea:focus.materialize-textarea {
+	border-bottom: 1px solid #E74C3C !important; 
+	-webkit-box-shadow: 0 1px 0 0 #E74C3C !important;
+	-moz-box-shadow: 0 1px 0 0 #E74C3C !important;
+	box-shadow: 0 1px 0 0 #E74C3C !important;
+}
+.card a{
+	color: #ffab40 !important;
+}
+.dropdown-content li > span {
+	color: #E74C3C !important;
+}
+input[type="checkbox"]:not(:checked), [type="checkbox"]:checked{
+	visibility: initial;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+	text-decoration: none;
+}
+td, th {
+}
+nav {
+  color: #fff;
+  background-color: #e74c3c;
+  width: 100%;
+  height: 56px !important;
+  line-height: 56px !important;
+  overflow: hidden; 
+}
+nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0; 
+}
+  .collapsible-header i {
+    float: right !important;}
+
+ .side-nav span{
+ 	padding-right: 15px;
+ 	float:right;
+ }
+  .side-nav i{
+ 	float:right;
+ 	line-height: 64px;
+ 	padding-right: 15px;
+ }
+   .collapsible-header i{
+ 	padding-right: 0px;
+ }

@@ -1,0 +1,1283 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family:'Roboto', Arial, Helvetica, sans-serif;
+	text-shadow: 0 0 1px rgba(51,51,51,0.2);
+	/*font-size: 1em;*/
+}
+html, body{
+overflow-y: auto;
+background-color: transparent;
+height:100%;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (max-device-width : 1023px) {
+
+	div.nav, #vert-td{
+	min-height:159px;
+	display:none!important;
+	}
+
+	#logo, #socnet, #login-status{
+		display:none!important;
+	}
+
+	#footer-content{
+		width:100%!important;
+	}
+
+	.header{
+	height:auto !important;
+	}
+
+	#contentwrap{
+	padding-top:0px!important;
+	}
+
+	span.del-blog-comment{
+		visibility: visible;
+		cursor: pointer;
+	}
+	/*html, body{
+font-size: 1em;
+}*/
+	
+/* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1024px) {
+/* Styles */
+.mobile{
+		display:none!important;
+		
+	}
+
+.headericon{
+	display:none!important;
+}
+.blog-comments li:hover span.del-blog-comment{
+	visibility: visible;
+}
+span.del-blog-comment{
+	visibility: hidden;
+	cursor: pointer;
+}
+}
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+}
+
+/* Mobile Menu Styles */
+
+.side-nav hr{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mobile-login{
+	font-size: 1rem;
+	line-height: 0.5rem;
+	height: 260px;
+}
+.mobile-login a{
+	font-size: 1.25rem;
+	margin: 0;
+}
+.mobile-login li{
+	height: 45px;
+	vertical-align: center;
+}
+.mobile-login span.mobile-login-username{
+	display: block;
+	height: auto;
+	line-height: 2rem;
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+}
+
+/* End Mobile Menu Styles */
+
+body{
+	overflow-x: hidden;
+	margin:0;
+   padding:0;
+   height:100%;
+}
+#wrapper{
+	width:100%;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:100%;
+}
+/*
+#wrapper a{
+	color:#FFF;
+}
+*/
+#contentwrap{
+	width:100%;
+	max-width:1880px;
+	right:0px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:376px;
+	/*color:#CCC;*/
+	padding-bottom:220px;
+	padding-top:20px;
+}
+#content .custom{
+	padding: 10px;
+	overflow-x: auto;
+}
+.header{
+	max-width:1880px;
+	width:100%; 
+	height:100px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
+#footer{
+	padding:20px;
+}
+#footerwrap{
+	width:100%;
+	/*height:200px;*/
+	bottom:0;
+	left:0;
+	right:0;
+	position:absolute;
+	padding-bottom: 15px;
+}
+#footer-content{
+	/*width:100%;*/
+	float:left;
+}
+/*h1{
+	padding:10px;
+	text-align:center;
+	font-style: italic;
+	margin-bottom:10px;
+}
+h2{
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:10px;s
+	text-align:center;
+}*/
+h1 {
+	font-size: 3em;
+	text-align: center;
+}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+div.profile-content{
+	width:100%;
+	min-height:650px;
+}
+div.gallery{
+	width:50%;
+	float:left;
+}
+div.info-content{
+	width:48%;
+	margin-left: auto;
+	margin-top: -550px;
+}
+li{
+	/*margin-left:15px;*/
+}
+img{
+	border:0;	
+}
+img.a{
+	border:0;
+}
+
+div.nav{
+	width:100%;
+	font-size:0.75em;
+	min-height:50px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.button-collapse{
+	font-size:42px;
+	margin-left:15px;
+}
+.mobile{
+	width:100%;
+	height:auto;
+	position:fixed;
+	background-color:#FFFFFF;
+	z-index:100;
+}
+.icon{
+	/*color:#5F5F5F;*/
+}
+.icon-facebook2:hover{
+	color:#3b5998;
+}
+.icon-googleplus3:hover{
+	color:#dd4b39;
+}
+.icon-twitter2:hover{
+	color:#00aced;
+}
+.icon-instagram:hover{
+	color:#517fa4;
+}
+.icon-linkedin:hover{
+	color:#007bb6;
+}
+/* Horizontal Nav Menu */
+#horiz-menu, #horiz-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#horiz-menu {
+    width: 100%;
+	height:50px;
+	max-width:1880px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+#horiz-menu:before,
+#horiz-menu:after {
+    content: "";
+    display: table;
+}
+
+#horiz-menu:after {
+    clear: both;
+}
+
+#horiz-menu {
+    zoom:1;
+}
+
+#horiz-menu li {
+    float: left;
+    position: relative;
+	height:50px;
+}
+
+#horiz-menu a {
+    float: left;
+	padding-top:10px;
+	height:40px;
+	text-align:center;
+	font-size:1.5rem;
+	line-height:1.5rem;
+    text-decoration: none;
+	transition: all .2s ease-in-out;
+	width:100%;
+}
+/*
+#horiz-menu li:hover > a {
+	-webkit-box-shadow: inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+}
+*/
+
+#horiz-menu ul {
+    margin: -20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 1;
+    transition: all .2s ease-in-out;
+}
+
+#horiz-menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#horiz-menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/ 
+}
+
+#horiz-menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+	height:50px;
+    _line-height: 0; /*IE6 only*/
+}
+
+#horiz-menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#horiz-menu ul a {
+	padding-top:10px;
+	width:inherit;
+	height:40px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#horiz-menu ul a:hover {
+    
+}
+#horiz-menu ul li:first-child > a {
+    
+}
+
+#horiz-menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+}
+
+#horiz-menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+}
+
+#horiz-menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec;
+	background-color:#A70002;
+}
+
+#horiz-menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;   
+}
+
+#horiz-menu ul li:last-child > a {
+	
+}
+/* End Horizontal Nav Menu */
+
+/* Vert Nav Menu */
+#vert-menu, #vert-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#vert-menu {
+    width: 100%;
+	height:50px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	zoom:1;
+}
+
+#vert-menu:before,
+#vert-menu:after {
+    content: "";
+    display: table;
+}
+
+#vert-menu:after {
+    clear: both;
+}
+
+#vert-menu li {
+    position: relative;
+	height:50px;
+}
+
+#vert-menu a {
+    float: left;
+	padding-top:10px;
+	height:40px;
+	text-align:center;
+	font-size:1.5rem;
+	line-height:1.5rem;
+    text-decoration: none;
+	transition: all .2s ease-in-out;
+	width:100%;
+}
+
+#vert-menu li:hover > a {
+	-webkit-box-shadow: inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         inset 0px 4px 0px 0px rgba(50, 50, 50, 0.75);
+}
+
+#vert-menu ul {
+    margin:0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    margin-left: 100%;
+    transition: all .2s ease-in-out;
+}
+
+#vert-menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+#vert-menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/ 
+}
+
+#vert-menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+	height:50px;
+    _line-height: 0; /*IE6 only*/
+}
+
+#vert-menu ul li:last-child {   
+    box-shadow: none;    
+}
+
+#vert-menu ul a {
+	padding-top:10px;
+	width:inherit;
+	height:40px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+#vert-menu ul a:hover {
+    background-color:#A70002;
+}
+#vert-menu ul li:first-child > a {
+    
+}
+
+#vert-menu ul li:first-child > a:after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+}
+
+#vert-menu ul ul li:first-child a:after {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0; 
+}
+
+#vert-menu ul li:first-child a:hover:after {
+    border-bottom-color: #04acec;
+	background-color:#A70002;
+}
+
+#vert-menu ul ul li:first-child a:hover:after {
+    border-right-color: #0299d3; 
+    border-bottom-color: transparent;
+}
+
+#vert-menu ul li:last-child > a {
+	
+}
+/* End Vert Nav Menu */
+
+/* SpryTabbedPanels.css - version 0.6 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* Horizontal Tabbed Panels
+ *
+ * The default style for a TabbedPanels widget places all tab buttons
+ * (left aligned) above the content panel.
+ */
+
+/* This is the selector for the main TabbedPanels container. For our
+ * default style, this container does not contribute anything visually,
+ * but it is floated left to make sure that any floating or clearing done
+ * with any of its child elements are contained completely within the
+ * TabbedPanels container, to minimize any impact or undesireable
+ * interaction with other floated elements on the page that may be used
+ * for layout.
+ *
+ * If you want to constrain the width of the TabbedPanels widget, set a
+ * width on the TabbedPanels container. By default, the TabbedPanels widget
+ * expands horizontally to fill up available space.
+ *
+ * The name of the class ("TabbedPanels") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabbedPanels container.
+ */
+.TabbedPanels {
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	clear: none;
+	width: 100%; /* IE Hack to force proper layout when preceded by a paragraph. (hasLayout Bug)*/
+}
+
+/* This is the selector for the TabGroup. The TabGroup container houses
+ * all of the tab buttons for each tabbed panel in the widget. This container
+ * does not contribute anything visually to the look of the widget for our
+ * default style.
+ *
+ * The name of the class ("TabbedPanelsTabGroup") used in this selector is not
+ * necessary to make the widget function. You can use any class name you
+ * want to style the TabGroup container.
+ */
+.TabbedPanelsTabGroup {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* This is the selector for the TabbedPanelsTab. This container houses
+ * the title for the panel. This is also the tab "button" that the user clicks
+ * on to activate the corresponding content panel so that it appears on top
+ * of the other tabbed panels contained in the widget.
+ *
+ * For our default style, each tab is positioned relatively 1 pixel down from
+ * where it wold normally render. This allows each tab to overlap the content
+ * panel that renders below it. Each tab is rendered with a 1 pixel bottom
+ * border that has a color that matches the top border of the current content
+ * panel. This gives the appearance that the tab is being drawn behind the
+ * content panel.
+ *
+ * The name of the class ("TabbedPanelsTab") used in this selector is not
+ * necessary to make the widget function. You can use any class name you want
+ * to style this tab container.
+ */
+.TabbedPanelsTab {
+	position: relative;
+	float: left;
+	padding: 6px 10px 6px 10px;
+	margin: 0px 5px 0px 0px;
+	font: 0.75em 'Roboto';
+	background-color: #333;
+	color:#ccc;
+	list-style: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	cursor: pointer;
+	outline: none;
+}
+
+/* This selector is an example of how to change the appearnce of a tab button
+ * container as the mouse enters it. The class "TabbedPanelsTabHover" is
+ * programatically added and removed from the tab element as the mouse enters
+ * and exits the container.
+ */
+.TabbedPanelsTabHover {
+	background-color: #CCC;
+}
+
+/* This selector is an example of how to change the appearance of a tab button
+ * container after the user has clicked on it to activate a content panel.
+ * The class "TabbedPanelsTabSelected" is programatically added and removed
+ * from the tab element as the user clicks on the tab button containers in
+ * the widget.
+ *
+ * As mentioned above, for our default style, tab buttons are positioned
+ * 1 pixel down from where it would normally render. When the tab button is
+ * selected, we change its bottom border to match the background color of the
+ * content panel so that it looks like the tab is part of the content panel.
+ */
+.TabbedPanelsTabSelected {
+}
+
+/* This selector is an example of how to make a link inside of a tab button
+ * look like normal text. Users may want to use links inside of a tab button
+ * so that when it gets focus, the text *inside* the tab button gets a focus
+ * ring around it, instead of the focus ring around the entire tab.
+ */
+.TabbedPanelsTab a {
+	color: black;
+	text-decoration: none;
+}
+
+/* This is the selector for the ContentGroup. The ContentGroup container houses
+ * all of the content panels for each tabbed panel in the widget. For our
+ * default style, this container provides the background color and borders that
+ * surround the content.
+ *
+ * The name of the class ("TabbedPanelsContentGroup") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the ContentGroup container.
+ */
+.TabbedPanelsContentGroup {
+	clear: both;
+	background-color: #EEE;
+}
+
+/* This is the selector for the Content panel. The Content panel holds the
+ * content for a single tabbed panel. For our default style, this container
+ * provides some padding, so that the content is not pushed up against the
+ * widget borders.
+ *
+ * The name of the class ("TabbedPanelsContent") used in this selector is
+ * not necessary to make the widget function. You can use any class name you
+ * want to style the Content container.
+ */
+.TabbedPanelsContent {
+	overflow: hidden;
+	padding: 4px;
+}
+
+/* This selector is an example of how to change the appearnce of the currently
+ * active container panel. The class "TabbedPanelsContentVisible" is
+ * programatically added and removed from the content element as the panel
+ * is activated/deactivated.
+ */
+.TabbedPanelsContentVisible {
+}
+
+/* Vertical Tabbed Panels
+ *
+ * The following rules override some of the default rules above so that the
+ * TabbedPanels widget renders with its tab buttons along the left side of
+ * the currently active content panel.
+ *
+ * With the rules defined below, the only change that will have to be made
+ * to switch a horizontal tabbed panels widget to a vertical tabbed panels
+ * widget, is to use the "VTabbedPanels" class on the top-level widget
+ * container element, instead of "TabbedPanels".
+ */
+
+.VTabbedPanels {
+	overflow: hidden;
+	zoom: 1;
+}
+
+/* This selector floats the TabGroup so that the tab buttons it contains
+ * render to the left of the active content panel. A border is drawn around
+ * the group container to make it look like a list container.
+ */
+.VTabbedPanels .TabbedPanelsTabGroup {
+	float: left;
+	width: 10em;
+	height: 20em;
+	background-color: #EEE;
+	position: relative;
+	border-top: solid 1px #999999;
+	border-right: solid 1px #999999;
+	border-left: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTab {
+	float: none;
+	margin: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+/* This selector disables the float property that is placed on each tab button
+ * by the default TabbedPanelsTab selector rule above. It also draws a bottom
+ * border for the tab. The tab button will get its left and right border from
+ * the TabGroup, and its top border from the TabGroup or tab button above it.
+ */
+.VTabbedPanels .TabbedPanelsTabSelected {
+	background-color: #EEE;
+	border-bottom: solid 1px #999999;
+}
+
+/* This selector floats the content panels for the widget so that they
+ * render to the right of the tabbed buttons.
+ */
+.VTabbedPanels .TabbedPanelsContentGroup {
+	clear: none;
+	float: left;
+	padding: 0px;
+	width: 30em;
+	height: 20em;
+}
+
+/* Styles for Printing */
+@media print {
+.TabbedPanels {
+	overflow: visible !important;
+}
+.TabbedPanelsContentGroup {
+	display: block !important;
+	overflow: visible !important;
+	height: auto !important;
+}
+.TabbedPanelsContent {
+	overflow: visible !important;
+	display: block !important;
+	clear:both !important;
+}
+.TabbedPanelsTab {
+	 overflow: visible !important;
+	 display: block !important;
+	 clear:both !important;
+}
+}
+/* End SpryTabbedPanels */
+option{
+	background-color:#666666;
+	border:2px solid #222222;
+	color:#FFF;
+	padding:5px;
+	}
+select{
+	background-color:#666666;
+	border:2px solid #222222;
+	color:#FFF;
+	padding:5px;
+}
+.editpageform tr{
+	width:960px;
+}
+.pagelist tr{
+	background-color:#888;
+}
+.editselected{
+	background-color:#800000;
+}
+/*
+.text{
+	height:25px;
+	padding:5px;
+	margin:10px;
+	background:#E0E0E0;
+	color:#111;
+	outline:none;
+	font-size:18px;
+}
+
+.text a:{
+	border:1px solid #FF0000;
+}
+*/
+::-webkit-input-placeholder {
+   color: #333;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #333;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #333;   
+}
+
+:-ms-input-placeholder {  
+   color: #333; 
+}/*
+tr.heading,td.heading,th.heading{
+	font-size:1.25em;
+	padding:3px;
+}
+div.h1{
+	text-align:center;
+	font-size: xx-large;
+	font-weight: bold;
+	width:auto;
+	font-style:italic;
+}*/
+div.profile{
+	background-color:#999999;
+	width:250px;
+	height:250px;
+	padding:20px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+}
+div.staffBlock{
+	margin:10px;
+	padding:10px;
+	display:block;
+	width:200px;
+	height:150px;
+	float:left;
+	background-color:#404040;
+	border-radius:5px;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	transition:all;
+	transition-duration:0.2s;
+}
+div.staffBlock:hover{
+	background-color:#666666;
+}
+div.staffBlock span:nth-child(1){
+	display:block;
+	margin-bottom:5px;
+	width:100%;
+	height:120px;
+	line-height:120px;
+	vertical-align:middle;
+}
+div.staffBlock span:nth-child(2){
+	display:block;
+	width:100%;
+	height:30px;
+}
+#nav{position: relative; right:-5%; padding:0; margin:0px auto; text-align:center;}
+#nav .clear{clear:both;}
+#nav ul{padding:0 0 0 5px; margin:0; list-style:none; margin:0px auto; text-align:left; width:100%;}
+#nav li{ float: left; margin:5px 10px 5px 0; text-align:center;}
+ul{
+	/*list-style-position:inside;*/
+}
+.clear{
+	clear:both;
+}
+.photo-link{
+    margin:10px;
+    display:block;
+    width:auto;
+    float:left;
+}
+.photo-link:hover{
+}
+
+span.tooltips {
+  position: relative;
+  display:inline;
+}
+span.tooltips span {
+  position: absolute;
+  width:auto;
+  white-space:nowrap;
+  padding-right:5px;
+  padding-left:5px;
+  padding-top:2px;
+  padding-bottom:2px;
+  color: #FFFFFF;
+  background: #000000;/* The Fallback */;
+  background: rgba(0, 0, 0, 0.75);
+  height: auto;
+  line-height: 25px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 3px;
+}
+span.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  margin-top: 8px;
+  width: 0; height: 0;
+  border-right: 8px solid rgba(0, 0, 0, 0.75);
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+span:hover.tooltips span {
+  visibility: visible;
+  opacity: 1;
+  left: 100%;
+  top: 50%;
+  margin-top: -12px;
+  margin-left: 10px;
+  z-index: 999;
+}
+
+input.button{
+	background-color:#666666;
+	border:2px solid #222222;
+	border-radius: 4px;
+	color:#FFF;
+	padding:5px;
+}
+input.button:hover{
+	background-color:#999999;
+}
+div.fbbutton{
+	background-image:url(../images/facebook_icon.png);
+	background-position: 0px, 0px;
+	width:48px;
+	height:48px;
+	position:absolute;
+	right:10px;
+}
+div.fbbutton:hover{
+		background-position: 48px, 0px;
+}
+/*Forum table induvidual cells
+	table.forum-table{
+		border:2px solid #666666;
+	 
+	}
+	tr.info-table:nth-child(even){
+		background-color:#666666;
+	}
+	tr.info-table:nth-child(odd){
+		background-color:#555555;
+	}
+	td.info-tabledata{
+		padding-left:5px;
+	}
+	Table forum rows
+	tr.forum-title{
+		background-color:#131313;
+	 
+	}
+	tr.forum-topic{
+		font-size:0.750rem;
+		color:#666666;
+	}
+	tr.forum-topic:nth-child(even){
+		background-color:#CCC;
+	}
+	tr.forum-topic:nth-child(odd){
+		background-color:#B7B7B7;
+	}
+	tr.forum-topic a{
+		font-size:0.750rem;
+		color:#333333;
+		text-decoration:none;
+		font-weight:bold;
+	 
+	}
+	tr.forum-topic:hover{
+		background-color:#eee;
+	 
+	}
+	Forum table induvidual cells
+	td.forum-table-cell-title{
+		padding-left:15px;
+		height:30px;
+		font-size:1.125rem;
+	}
+	td.forum-table-cell-topic{
+		padding-left:1em;
+		height:70px;
+		border-bottom:1px solid #111111;
+	}
+	b{
+		font-weight:bolder;
+	}
+	.forumbody{
+		padding:	5px;
+	}
+	.forumfooter{
+		padding:	5px;
+	}
+	*/
+h3.error
+{
+	text-align:center;
+	color:#D8000C;
+	border:2px solid #D8000C;
+	background:#FFBABA;
+	min-height:20px;
+	line-height:20px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:10px;
+	padding:20px;
+	-webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+	-webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+h3.success
+{
+	text-align:center;
+	color:#4F8A10;
+	border:2px solid #4F8A10;
+	background:#DFF2BF;
+	line-height:20px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:10px;
+	padding:20px;
+}
+h3.message
+{
+	text-align:center;
+	color:#000000;
+	border:2px solid #835900;
+	background:#E38D00;
+	line-height:20px;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	border-radius:10px;
+	padding:20px;
+}
+
+.error-block{
+	display:inline;
+	border-radius:5px;
+	background-color:#9F0002;
+	color:#FFFFFF;
+	padding:3px;
+	font-size:16px;
+}
+/*Blog*/
+.title{
+	padding:5px;
+	padding-left: 10px;
+	font-weight:900;
+}
+.title a{
+	text-decoration:none;
+
+}
+.title a:hover{
+	text-decoration:underline;
+
+}
+.blogname{
+	font-weight:900;
+	font-size:0.875rem;
+}
+.blogbody{
+	padding:0px 5px 10px 5px;
+	word-break: break-all;
+}
+.blog{
+	color: #333333;
+	background: #ccc;
+	margin:0;
+	margin-bottom: 25px;
+	border-spacing:0;
+	overflow: visible;
+}
+.blogfooter{
+	font-size:0.875rem;
+	padding:0px 5px 10px 5px;
+	
+}
+.blog-comments{
+	height: 100%;
+	padding: 10px;
+	border-top: dashed;
+}
+.blog-comments ul{
+	height: 100%;
+	width: 100%;
+	padding-top: 10px;
+}
+.blog-comments li{
+	word-break: break-all;
+	margin-bottom: 8px;
+}
+span.linkspan{
+	cursor: pointer;
+}
+/*forums
+.forum{
+	
+
+}
+.forum tr{
+	font-size:0.750rem;
+	transition: all 200ms;
+	-webkit-transition: all 200ms;
+}
+.forum tr a{
+	font-size:1.125rem;
+	text-decoration:none;
+	font-weight:bold;
+	-webkit-transition: all 200ms;
+}
+.forum tr td{
+	padding-left:15px;
+	padding-right:15px;
+	height:90px;
+	margin-bottom:10px;
+}
+.forummessage{
+	vertical-align:text-top;
+	border:inherit;
+}
+.forumsuser{
+}
+.forumsadmin{
+	background-color:#660000;
+	border-color:#900;
+}
+.forumsmod{
+	background-color:#006;
+	border-color:#099;
+}
+.forumsvip{
+	background-color: rgba(153, 102, 0, 0.8);
+	border-color:#FF0;
+}
+.userspost{
+	background-color: #e74c3c;
+	font-size:1.500rem;
+	
+}
+div.userbar{
+	width:100%;
+	text-align:center;
+	background-color: #000;
+	font-family:Sans-Serif;
+	font-style: italic;
+	height:49px;
+}
+div.rank{
+	width:140px;
+	height:35px;
+	border-radius: 10px;
+	text-align:center;
+	font-size:1.500em;
+	padding-top:5px;
+	color:#0F0F0F;	
+}
+.forumtitle{
+	height:50px;
+	font-size:1.500em;
+	border-bottom:2px dashed;
+}
+*/
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email],
+input[type=file],
+input[type=password]
+{
+	height:25px;
+	padding:5px;
+	margin:10px;
+	background:#fff;
+	border:none;
+	outline:none;
+	border-bottom: 1px solid;
+}
+input[type="text"]:disabled{
+	background-color:#D0D0D0;
+}
+textarea
+{
+	margin:10px;
+	background:#fff;
+	border:none;
+	outline:none;
+	padding: 5px;
+}
+span.galleryImage {
+    display: inline-block;
+    position: relative;
+    border: 0px solid #f90;
+}
+
+span.galleryImage input[type=checkbox] {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+span.galleryImage:hover input[type=checkbox],
+span.galleryImage input[type=checkbox]:checked {
+    top: 5%;
+    left: 5%;
+    opacity: 1;
+    height:50%;
+    width:50%;
+    -webkit-transition: all 0.5s ease-in-out;
+}span.galleryImage {
+    display: inline-block;
+    position: relative;
+    border: 0px solid #f90;
+}
+
+span.galleryImage input[type=checkbox] {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+span.galleryImage:hover input[type=checkbox],
+span.galleryImage input[type=checkbox]:checked {
+    top: 5%;
+    left: 5%;
+    opacity: 1;
+    height:40%;
+    width:40%;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+/*  end */
+.waves-effect.waves-blue .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: rgba(33, 150, 243, 0.65);
+    }
+.blog-btn{
+	top:-20px;
+	right:120px;
+	position:absolute !important;
+}

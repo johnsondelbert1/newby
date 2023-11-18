@@ -1,0 +1,35 @@
+.card a{
+	overflow: visible;
+}
+*, *:before, *:after {
+	box-sizing: content-box;
+  }
+ td, th {
+	padding: 0;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	border-radius: 0;
+}
+.side-nav a{
+	font-size: 1.25rem;
+	display: inline;
+	height: 50px;
+	line-height: 50px;
+}
+.collapsible-header i{
+	font-size: 1.75rem;
+	float: right;
+	margin-right: 0;
+	margin-top: 5px;
+}
+.container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+input[type=text], input[type=url], input[type=tel], input[type=number], input[type=color], input[type=email], input[type=password]{
+	width: auto;
+}
+/*table{
+	width: auto;
+}*/

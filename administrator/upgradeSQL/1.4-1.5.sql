@@ -1,0 +1,4 @@
+ALTER TABLE `site_info` ADD `address_line1` VARCHAR(255) NOT NULL AFTER `contact_email`, ADD `address_line2` VARCHAR(255) NOT NULL AFTER `address_line1`, ADD `address_city` VARCHAR(255) NOT NULL AFTER `address_line2`, ADD `address_stateregion` VARCHAR(255) NOT NULL AFTER `address_city`, ADD `address_zip` VARCHAR(10) NOT NULL AFTER `address_stateregion`, ADD `address_country` VARCHAR(64) NOT NULL AFTER `address_zip`, ADD `contact_phone` VARCHAR(16) NOT NULL AFTER `address_country`;
+ALTER TABLE `site_info` ADD `site_description` VARCHAR(255) NOT NULL AFTER `default_rank`;
+ALTER TABLE `site_info` CHANGE `style_js_link_tags` `custom_js` TEXT NOT NULL;
+UPDATE `site_info` SET `version` = '1.5' WHERE `site_info`.`id` = 1;

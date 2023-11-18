@@ -1,0 +1,3 @@
+ALTER TABLE `site_layout` ADD `bg_repeat` VARCHAR(64) NOT NULL AFTER `text_color`, ADD `bg_position` VARCHAR(64) NOT NULL AFTER `bg_repeat`, ADD `bg_size` VARCHAR(64) NOT NULL AFTER `bg_position`, ADD `bg_fixed` BOOLEAN NOT NULL DEFAULT TRUE AFTER `bg_size`, ADD `use_bg_color` BOOLEAN NOT NULL DEFAULT TRUE AFTER `bg_fixed`;
+ALTER TABLE `site_info` ADD `copyright_text` TEXT NOT NULL AFTER `contact_email`;
+UPDATE `prj_illuminate_del`.`site_info` SET `version` = '1.2' WHERE `site_info`.`id` = 1;

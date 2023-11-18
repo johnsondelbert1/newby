@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+	background-color: #999999;
+}
+
+#RBContainer {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-color: #FFFFFF;
+	text-align: left;
+	width: 900px;
+	border: medium inset #CCCCCC;
+	height: auto;
+}
+
+#RBContainer #RBHeader {
+	height: 120px;
+	border-bottom-width: medium;
+	border-bottom-style: inset;
+	border-top-color: #CCCCCC;
+}
+
+#RBContainer #RBSiteContents
+{
+	height: 100px;
+}
+
+#RBContainer #RBFooter
+{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #FFFFFF;
+	background-color: #000000;
+	text-align: center;
+	padding: 5px;
+	border-top-width: medium;
+	border-top-style: inset;
+	border-top-color: #CCCCCC;
+}
+
+#RBContainer #RBFooter a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}

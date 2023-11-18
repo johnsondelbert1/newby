@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Coming soon from CC-WD.com</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #CCCCCC;
+}
+#RBTable {
+	background-color: #FFFFFF;
+	margin: auto;
+	border: thick inset #999999;
+}
+-->
+</style>
+</head>
+
+<body>
+<center>
+  <table id="RBTable">
+    <tr>
+      <td><a href="http://www.cc-wd.com"><img src="images/Under_Construction.png" alt="cc-wd.com" width="800" height="600" border="0" longdesc="http://www.cc-wd.com" /></a></td>
+    </tr>
+  </table>
+  <p><img src="images/WebLogo.png" alt="rrbe" width="71" height="37" longdesc="http://www.rrbe.net" /></p>
+</center>
+</body>
+</html>

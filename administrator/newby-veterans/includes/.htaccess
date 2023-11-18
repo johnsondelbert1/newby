@@ -1,0 +1,5 @@
+Order allow,deny
+<Files .htaccess .htpasswd .htuser .htgroups >
+order allow,deny
+deny from all
+</Files>

@@ -1,0 +1,93 @@
+body{
+	font-family: "Arial", Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #BAAB94;
+}
+/*Content Style*/
+#content{
+	padding: 10px;
+}
+
+/*Nav Styles*/
+#nav{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #C3CEBC;
+}
+#nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav li{
+	display: inline;
+	float: left;
+}
+#nav a{
+	display: block;
+	width: 120px;
+	padding: 10px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 20px;
+	font-weight: bold;
+}
+#nav a:hover{
+	background-color: #6F73FF;
+}
+#nav a.selected{
+	background-color: #494EFC;
+}
+
+/*Table Styles*/
+table.result, table.result th, table.result td{
+	border: 1px solid #606060;
+}
+table.result{
+	border-collapse: collapse;
+}
+table.result th{
+	background-color: #333333;
+	color:#FFFFFF;
+	padding: 8px;
+}
+table.result td{
+	padding: 5px;
+}
+table.result tr:nth-child(even){
+	background-color: #E0E0E0;
+}
+table.result tr:nth-child(odd){
+	background-color: #CCCCCC;
+}
+table.result tr:hover td{
+	background-color: #FFFFFF;
+}
+
+/*Input Styles*/
+.forms input[type="text"], .forms textarea{
+	width: 450px;
+}
+
+/*Msg*/
+.error, .success{
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 10px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 500px;
+	text-align: center;
+}
+.error{
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+.success{
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
